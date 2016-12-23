@@ -25,5 +25,7 @@ Route::group(['middleware' => ['web','rest.login'], 'namespace' => 'Rest', 'pref
 	Route::get('info', 'IndexController@info');
 	Route::get('quit', 'LoginController@quit');
 	Route::any('pass', 'IndexController@pass');
+
+	Route::resource('user', 'UserController');
 });
 
