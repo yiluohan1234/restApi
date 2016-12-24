@@ -27,5 +27,10 @@ Route::group(['middleware' => ['web','rest.login'], 'namespace' => 'Rest', 'pref
 	Route::any('pass', 'IndexController@pass');
 
 	Route::resource('user', 'UserController');
+	Route::post('project/changeorder', 'ProjectController@changeorder');
+	Route::resource('project', 'ProjectController');
+
+	Route::resource('userpicture', 'UserpictureController');
+	Route::resource('ugc', 'UgcController');
 });
 
