@@ -12,9 +12,9 @@
 */
 Route::group(['middleware' => ['web']], function () {
 	Route::get('/', function () {
-		return view('welcome');
+		return redirect('rest');
 	});
-	Route::any('rest/login', 'Rest\LoginController@login');
+	Route::any('rest', 'Rest\LoginController@login');
 	Route::get('rest/code', 'Rest\LoginController@code');
 	Route::get('rest/test', 'Rest\LoginController@test');
 });
