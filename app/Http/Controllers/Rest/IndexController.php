@@ -16,13 +16,17 @@ class IndexController extends CommonController
     public function index()
     {   
         $project = Project::all();
-        $start = 1;
-    	return view('rest.index', compact('project','start'));
+    	return view('rest.index', compact('project'));
     }
-    //系统基本信息
-    public function info()
+	//系统基本信息
+	public function info()
+	{
+		return view('rest.info');
+	}
+    //欢迎界面
+    public function welcome()
     {
-    	return view('rest.info');
+    	return view('rest.welcome');
     }
     //更改密码
      public function pass()

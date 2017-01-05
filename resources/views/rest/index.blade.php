@@ -37,6 +37,7 @@
                 <ul class="sub_menu">               	
                     <li><a href="{{url('rest/user')}}" target="main"><i class="fa fa-fw fa-cubes"></i>用户配置</a></li>
                     <li><a href="{{url('rest/project')}}" target="main"><i class="fa fa-fw fa-book"></i>导航管理</a></li>
+                    <li><a href="{{url('rest/info')}}" target="main"><i class="fa fa-fw fa-rebel"></i>系统基本信息</a></li>
                     
                     <!-- <li><a href="#" target="main"><i class="fa fa-fw fa-database"></i>备份还原</a></li> -->
                 </ul>
@@ -47,7 +48,7 @@
                     <li><a href="http://www.yeahzan.com/fa/facss.html" target="main"><i class="fa fa-fw fa-font"></i>图标调用</a></li>
                     <li><a href="http://hemin.cn/jq/cheatsheet.html" target="main"><i class="fa fa-fw fa-chain"></i>Jquery手册</a></li>
                     <li><a href="http://tool.c7sky.com/webcolor/" target="main"><i class="fa fa-fw fa-tachometer"></i>配色板</a></li>
-                    <li><a href="element.html" target="main"><i class="fa fa-fw fa-tags"></i>其他组件</a></li>
+                    <li><a href="https://laravel.com/docs/5.3" target="main"><i class="fa fa-fw fa-tags"></i>其他组件</a></li>
                 </ul>
             </li>
         </ul>
@@ -56,7 +57,7 @@
 
 	<!--主体部分 开始-->
 	<div class="main_box">
-		<iframe src="{{url('rest/info')}}" frameborder="0" width="100%" height="100%" name="main"></iframe> 
+		<iframe src="{{url('rest/welcome')}}" frameborder="0" width="100%" height="100%" name="main"></iframe> 
 	</div>
 	<!--主体部分 结束-->
 

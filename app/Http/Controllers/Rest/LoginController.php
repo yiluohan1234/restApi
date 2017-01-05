@@ -25,7 +25,7 @@ class LoginController extends CommonController
     			return back()->with('msg', '验证码错误');
     		}
 
-    		/*//读取数据库的用户信息
+			//读取数据库的用户信息,没有做权限处理
     		$user = User::where('user_name', Input::get('user_name'))->get();
             $data = array(
                 'user_name' => $user[0]->user_name,
@@ -35,12 +35,13 @@ class LoginController extends CommonController
     		if ($user[0]->user_name != $input['user_name'] || Crypt::decrypt($user[0]->user_password) != $input['user_password'])
     		{
     			return back()->with('msg', '用户名或密码错误');
-    		}*/
+    		}
+			/*//读取数据库的第一个用户
             $user = User::first();              
             if ($user->user_name != $input['user_name'] || Crypt::decrypt($user->user_password) != $input['user_password'])
             {
                 return back()->with('msg', '用户名或密码错误');
-            }
+			}*/
     		session(['user' => $user]);
             return redirect('rest/index');
     	}

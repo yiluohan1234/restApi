@@ -16,12 +16,13 @@ Route::group(['middleware' => ['web']], function () {
 	});
 	Route::any('rest', 'Rest\LoginController@login');
 	Route::get('rest/code', 'Rest\LoginController@code');
-	Route::get('rest/test', 'Rest\LoginController@test');
+	Route::get('test', 'TestController@test');
 });
 
 Route::group(['middleware' => ['web','rest.login'], 'namespace' => 'Rest', 'prefix' => 'rest'], function () {
 
 	Route::get('index', 'IndexController@index');
+	Route::get('welcome', 'IndexController@welcome');
 	Route::get('info', 'IndexController@info');
 	Route::get('quit', 'LoginController@quit');
 	Route::any('pass', 'IndexController@pass');
@@ -32,5 +33,9 @@ Route::group(['middleware' => ['web','rest.login'], 'namespace' => 'Rest', 'pref
 
 	Route::resource('userpicture', 'UserpictureController');
 	Route::resource('ugc', 'UgcController');
+	Route::resource('column', 'ColumnController');
+	Route::resource('tpass', 'TpassController');
+	Route::resource('uc', 'UcController');
+	Route::resource('regression', 'RegressionController');
 });
 

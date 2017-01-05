@@ -16,7 +16,7 @@ class RestLogin
     public function handle($request, Closure $next)
     {
         if (!session('user')){
-            return redirect('rest/login');
+            return redirect('rest');
         }
         return $next($request);
     }

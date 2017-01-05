@@ -3,7 +3,7 @@
     <!--面包屑导航 开始-->
     <div class="crumb_warp">
         <!--<i class="fa fa-bell"></i> 欢迎使用登陆网站后台，建站的首选工具。-->
-        <i class="fa fa-home"></i> <a href="{{url('rest/info')}}">首页</a> &raquo; 用户画像二期-接口列表
+        <i class="fa fa-home"></i> <a href="{{url('rest/welcome')}}">首页</a> &raquo; 用户画像二期-接口列表
     </div>
     <!--面包屑导航 结束-->
 
@@ -39,13 +39,13 @@
                         <td>{{$v->api_name}}</td>
                         <td>{{$v->api_editor}}</td>
                         <td>
-                            <a href="{{$v->api_url}}" target="_black">{{$v->api_url}}</a>
+                            <a href="{{$v->api_url}}" target="_black">url</a>
                         </td>
                         <td>
-                            <a href="{{$v->api_wiki}}" target="_black">{{$v->api_wiki}}</a>
+                            <a href="{{$v->api_wiki}}" target="_black">wiki</a>
                         </td>
                         <td>
-                            <a href="{{$v->api_redmine}}" target="_black">{{$v->api_redmine}}</a>
+                            <a href="{{$v->api_redmine}}" target="_black">redmine</a>
                         </td>
                         <td>{{date('Y-m-d',$v->api_time)}}</td>
                         <td>

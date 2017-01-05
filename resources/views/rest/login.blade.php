@@ -7,8 +7,8 @@
 </head>
 <body style="background:#F3F3F4;">
 	<div class="login_box">
-		<h1>Rest</h1>
-		<h2>欢迎使用API管理平台</h2>
+		<h1>QA</h1>
+		<h2>欢迎使用QA管理平台</h2>
 		<div class="form">
 			@if(session('msg'))
 			<p style="color:red">{{session('msg')}}</p>
@@ -34,7 +34,7 @@
 					</li>
 				</ul>
 			</form>
-			<p>Coypright &copy; 2016 Powered by <a href="https://github.com/yiluohan1234/monitor" target="_blank">yiluohan1234</a></p>
+			<p>Copyright &copy; 2016 Powered by <a href="https://github.com/yiluohan1234/restApi" target="_blank">yiluohan1234</a></p>
 		</div>
 	</div>
 </body>

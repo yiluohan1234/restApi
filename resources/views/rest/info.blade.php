@@ -61,7 +61,7 @@
         <div class="result_content">
             <ul>
                 <li>
-                    <label>开源网站：</label><span><a href="https://github.com/yiluohan1234/blog" target="_blank">https://github.com/yiluohan1234/rest</a></span>
+                    <label>开源网站：</label><span><a href="https://github.com/yiluohan1234/restApi" target="_blank">https://github.com/yiluohan1234/restApi</a></span>
                 </li>
             </ul>
         </div>

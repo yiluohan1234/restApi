@@ -8,11 +8,17 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\File;
 
 use App\Http\Model\Project;
 
 class ProjectController extends Controller
 {
+	//test
+	public function test()
+	{
+		return view('rest.test');
+	}
     //get.rest/project 全部项目列表
     public function index()
     {
@@ -52,7 +58,9 @@ class ProjectController extends Controller
     {  	       
     	$input = Input::except('_token');
     	$input['project_time'] = time();
-        //dd($input);
+		//$setup=substr($input['project_url'], 5);
+		//$this->setup($setup);
+		
         //验证的规则
         $rules = [
             'project_name'=>'required',
@@ -130,4 +138,11 @@ class ProjectController extends Controller
         }
         return $data;
     }
+	public function setup($url)
+	{
+		$name = $url;
+		$_name = ucfirst($name);
+		$command = "./". base_path(). "/run.sh " .$_name . " ".$name;
+		shell_exec($command);
+	}
 }
