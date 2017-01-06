@@ -32,6 +32,7 @@
 	        @endif 	        
             </li>
             @endforeach
+			@if(0 == 0)
             <li>
             	<h3><i class="fa fa-fw fa-cog"></i>系统设置</h3>
                 <ul class="sub_menu">               	
@@ -42,6 +43,7 @@
                     <!-- <li><a href="#" target="main"><i class="fa fa-fw fa-database"></i>备份还原</a></li> -->
                 </ul>
             </li>
+			@endif
             <li>
             	<h3><i class="fa fa-fw fa-thumb-tack"></i>工具导航</h3>
                 <ul class="sub_menu">

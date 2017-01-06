@@ -15,8 +15,9 @@ class IndexController extends CommonController
 	//后台index
     public function index()
     {   
+		$data = session('data');
         $project = Project::all();
-    	return view('rest.index', compact('project'));
+    	return view('rest.index', compact('project','data'));
     }
 	//系统基本信息
 	public function info()

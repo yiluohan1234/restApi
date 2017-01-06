@@ -43,7 +43,7 @@ class LoginController extends CommonController
                 return back()->with('msg', '用户名或密码错误');
 			}*/
     		session(['user' => $user]);
-            return redirect('rest/index');
+            return redirect('rest/index')->with('data',$data);
     	}
     	else
     	{

@@ -37,5 +37,9 @@ Route::group(['middleware' => ['web','rest.login'], 'namespace' => 'Rest', 'pref
 	Route::resource('tpass', 'TpassController');
 	Route::resource('uc', 'UcController');
 	Route::resource('regression', 'RegressionController');
+	Route::resource('zt', 'ZtController');
+	Route::resource('zan', 'ZanController');
+	Route::resource('diy', 'DiyController');
+	Route::resource('zhihui', 'ZhihuiController');
 });
 
